@@ -19,10 +19,12 @@
     "@microsoft/sp-webpart-base": "1.11.0",
     "@uiw/react-md-editor": "^1.14.5",
     "braft-editor": "^2.3.9",
+    "markdown-it": "^12.0.2",
     "office-ui-fabric-react": "6.214.0",
     "react": "16.8.5",
     "react-dom": "16.8.5",
     "react-markdown": "^5.0.2",
+    "react-markdown-editor-lite": "^1.2.2",
     "remark-gfm": "^1.0.0"
   },
   "devDependencies": {
