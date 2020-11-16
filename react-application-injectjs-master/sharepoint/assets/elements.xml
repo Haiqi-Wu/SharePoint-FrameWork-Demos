@@ -4,6 +4,6 @@
         Title="InjectCss"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="5a1fcffd-dfeb-4844-b478-1feb4325a5a7"
-        ClientSideComponentProperties="{&quot;jsurl&quot;:&quot;/sites/dev/Style%20Library/custom.js&quot;}">
+        ClientSideComponentProperties="{&quot;jsurl&quot;:&quot;/sites/teamsite/Shared%20Documents/custom.js&quot;}">
     </CustomAction>
 </Elements>

@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://haiqiwu.sharepoint.com/sites/teamsite/SitePages/test.aspx",
       "customActions": {
         "5a1fcffd-dfeb-4844-b478-1feb4325a5a7": {
           "location": "ClientSideExtension.ApplicationCustomizer",
@@ -15,7 +15,7 @@
       }
     },
     "injectCss": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://haiqiwu.sharepoint.com/sites/teamsite/SitePages/test.aspx",
       "customActions": {
         "5a1fcffd-dfeb-4844-b478-1feb4325a5a7": {
           "location": "ClientSideExtension.ApplicationCustomizer",

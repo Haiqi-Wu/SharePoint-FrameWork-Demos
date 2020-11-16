@@ -27,6 +27,7 @@ export default class InjectCssApplicationCustomizer
         const head: any = document.getElementsByTagName("head")[0] || document.documentElement;
         let customJs:HTMLScriptElement = document.createElement("script");
         customJs.src=jsurl;
+        console.log(jsurl)
         head.insertAdjacentElement("beforeEnd", customJs);
         
     }
