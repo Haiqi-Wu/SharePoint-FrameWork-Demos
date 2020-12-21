@@ -23,7 +23,7 @@ export default class InjectCssApplicationCustomizer
     const jsurl: string = this.properties.jsurl;
     console.log(jsurl);
     if (jsurl) {
-        // inject the style sheet
+        
         const head: any = document.getElementsByTagName("head")[0] || document.documentElement;
         let customJs:HTMLScriptElement = document.createElement("script");
         customJs.src=jsurl;
