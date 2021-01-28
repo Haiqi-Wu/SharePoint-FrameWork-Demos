@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "2019-no-framework-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/2019NoFramework/2019NoFrameworkWebPart.js",
+          "manifest": "./src/webparts/2019NoFramework/2019NoFrameworkWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "2019NoFrameworkWebPartStrings": "lib/webparts/2019NoFramework/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "2019-no-frame-work-client-side-solution",
+    "id": "90095dcd-1079-41b9-9420-51927258047f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/2019-no-frame-work.sppkg"
+  }
+}
