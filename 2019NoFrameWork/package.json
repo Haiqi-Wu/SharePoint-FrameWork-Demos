@@ -13,9 +13,10 @@
   },
   "dependencies": {
     "@microsoft/sp-core-library": "~1.4.0",
-    "@microsoft/sp-webpart-base": "~1.4.0",
     "@microsoft/sp-lodash-subset": "~1.4.0",
-    "@microsoft/sp-office-ui-fabric-core": "~1.4.0"
+    "@microsoft/sp-office-ui-fabric-core": "~1.4.0",
+    "@microsoft/sp-webpart-base": "~1.4.0",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "~1.4.1",

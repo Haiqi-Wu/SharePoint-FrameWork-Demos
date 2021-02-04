@@ -8,6 +8,9 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import { SPHttpClient, ISPHttpClientOptions, SPHttpClientResponse } from '@microsoft/sp-http';
 import styles from './2019NoFrameworkWebPart.module.scss';
 import * as strings from '2019NoFrameworkWebPartStrings';
+import * as $ from 'jquery';
+require('bootstrap')
+import { SPComponentLoader } from '@microsoft/sp-loader';
 
 export interface I2019NoFrameworkWebPartProps {
   description: string;
@@ -16,6 +19,8 @@ export interface I2019NoFrameworkWebPartProps {
 export default class NoFrameworkWebPart extends BaseClientSideWebPart<I2019NoFrameworkWebPartProps> {
   
   public render(): void {
+    let cssURL = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+    SPComponentLoader.loadCss(cssURL);
     this.domElement.innerHTML = `
       <div class="${styles.NoFramework2019}">
         <div class="${styles.container}">
@@ -33,9 +38,56 @@ export default class NoFrameworkWebPart extends BaseClientSideWebPart<I2019NoFra
         <input type="text" id="idTitle" name="Title" placeholder="Serial Number." value="test title"><br />  
         <input id="upload" type="file" /><br />  
     <button class="create-Button ${styles.button}" id="btnRegister" ><span class="${styles.label}">Submit Order</span></button>
-      </div>`;
-    this._setButtonEventHandlers();
-    //this.upload();
+      </div>
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title">Click to toggle popover</button>
+      <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+                <li><a href="#">Page 1-3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      `;
+      var t="test"+new Date();
+      console.log(t)
+      function tt(){
+        console.log("test")
+      }
+    //this._setButtonEventHandlers();
+   //this.test();
+  }
+
+  test(){
+    $('[data-toggle="popover"]').popover({
+      html: true,
+      trigger: 'click',
+      placement: 'bottom',
+      content: function(){return '<img src="http://sp19/sites/Comm/SiteAssets/test.jpg"/>';}
+    })
   }
   private _setButtonEventHandlers(): void {
 
