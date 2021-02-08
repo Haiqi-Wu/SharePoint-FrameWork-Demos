@@ -25,7 +25,7 @@
       "name": "Hosted workbench",
       "type": "chrome",
       "request": "launch",
-      "url": "https://haiqiwu.sharepoint.com/sites/dev/_layouts/workbench.aspx",
+      "url": "https://contoso.sharepoint.com/sites/dev/_layouts/workbench.aspx",
       "webRoot": "${workspaceRoot}",
       "sourceMaps": true,
       "sourceMapPathOverrides": {
