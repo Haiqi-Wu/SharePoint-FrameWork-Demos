@@ -94,7 +94,7 @@ export default class ReadSpListItemsWebPart extends BaseClientSideWebPart<IReadS
           </tr>
 
           `;
-          //console.log(item)
+         
     });
 
     html += '</table>';
