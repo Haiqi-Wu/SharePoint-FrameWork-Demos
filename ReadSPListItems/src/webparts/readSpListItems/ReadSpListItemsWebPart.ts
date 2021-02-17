@@ -33,12 +33,16 @@ export interface ISPList {
   CustomerID: string;
 
   CustomerContactNo: string;
+  look:{
+    Title:string
+    ID:number
+  }
 
 }
 export default class ReadSpListItemsWebPart extends BaseClientSideWebPart<IReadSpListItemsWebPartProps> {
   private _getListData(): Promise<ISPLists> {
 
-    return this.context.spHttpClient.get(this.context.pageContext.web.absoluteUrl + "/_api/web/lists/GetByTitle('Customer')/Items", SPHttpClient.configurations.v1)
+    return this.context.spHttpClient.get(this.context.pageContext.web.absoluteUrl + "/_api/web/lists/GetByTitle('Customer')/Items?$select=Title,CustomerID,CustomerContactNo,look/Title,look/ID&$expand=look", SPHttpClient.configurations.v1)
 
       .then((response: SPHttpClientResponse) => {
 
@@ -58,7 +62,7 @@ export default class ReadSpListItemsWebPart extends BaseClientSideWebPart<IReadS
       this._getListData()
 
         .then((response) => {
-
+          //console.log(response)
           this._renderList(response.value);
 
         });
@@ -67,13 +71,13 @@ export default class ReadSpListItemsWebPart extends BaseClientSideWebPart<IReadS
 
   }
   private _renderList(items: ISPList[]): void {
-
+    //console.log(items)
     let html: string = '<table border=1 width=100% style="border-collapse: collapse;">';
 
     html += '<th>Customer Name</th> <th>Customer Code </th><th>Customer Contact Number</th>';
 
     items.forEach((item: ISPList) => {
-
+      console.log(item.look["Title"])
       html += `
 
       <tr>            
@@ -83,13 +87,14 @@ export default class ReadSpListItemsWebPart extends BaseClientSideWebPart<IReadS
           <td>${item.CustomerID}</td>
 
           <td>${item.CustomerContactNo}</td>
-
           
+          <td>${item.look["Title"]}</td>
+          <td>${item.look["ID"]}</td>
 
           </tr>
 
           `;
-
+          //console.log(item)
     });
 
     html += '</table>';
