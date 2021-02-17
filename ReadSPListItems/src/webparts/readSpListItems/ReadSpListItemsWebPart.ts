@@ -62,7 +62,7 @@ export default class ReadSpListItemsWebPart extends BaseClientSideWebPart<IReadS
       this._getListData()
 
         .then((response) => {
-          //console.log(response)
+          
           this._renderList(response.value);
 
         });
@@ -71,13 +71,13 @@ export default class ReadSpListItemsWebPart extends BaseClientSideWebPart<IReadS
 
   }
   private _renderList(items: ISPList[]): void {
-    //console.log(items)
+    
     let html: string = '<table border=1 width=100% style="border-collapse: collapse;">';
 
     html += '<th>Customer Name</th> <th>Customer Code </th><th>Customer Contact Number</th>';
 
     items.forEach((item: ISPList) => {
-      console.log(item.look["Title"])
+      
       html += `
 
       <tr>            
