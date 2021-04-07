@@ -1,0 +1,29 @@
+{
+  "@pnp/generator-spfx": {
+    "framework": "none",
+    "pnpFramework": "angularelements",
+    "pnp-libraries": [
+      "jquery@3",
+      "msgraph",
+      "@pnp/pnpjs",
+      "@pnp/spfx-property-controls",
+      "spfx-uifabric-themes",
+      "lodash",
+      "rush@3.3"
+    ],
+    "pnp-ci": "no-devops",
+    "pnp-vetting": [
+      "webpack-analyzer",
+      "stylelint",
+      "csscomb"
+    ],
+    "spfxenv": "spo"
+  },
+  "@microsoft/generator-sharepoint": {
+    "solutionName": "SPFxAngular9-spfx",
+    "environment": "spo",
+    "framework": "none",
+    "isCreatingSolution": true,
+    "whichFolder": "subdir"
+  }
+}

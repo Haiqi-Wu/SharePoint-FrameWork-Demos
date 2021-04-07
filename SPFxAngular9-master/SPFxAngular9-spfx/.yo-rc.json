@@ -1,0 +1,14 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.10.0",
+    "libraryName": "sp-fx-angular-9-spfx",
+    "libraryId": "e342b814-ddb2-4632-beb0-c1244541cb90",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "SPFxAngular9-spfx",
+    "framework": "none",
+    "isCreatingSolution": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

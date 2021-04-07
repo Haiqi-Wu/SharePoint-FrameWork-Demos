@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-fx-angular-9-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFxAngular9/SpFxAngular9WebPart.js",
+          "manifest": "./src/webparts/spFxAngular9/SpFxAngular9WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFxAngular9WebPartStrings": "lib/webparts/spFxAngular9/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,21 @@
+<div class="col-md-8">
+  <div class="card">
+    <div class="card-body">
+      <h3>List Items</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let listItem of listItems">
+            <td scope="row">{{listItem.Id}}</td>
+            <td scope="row">{{listItem.Title}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
