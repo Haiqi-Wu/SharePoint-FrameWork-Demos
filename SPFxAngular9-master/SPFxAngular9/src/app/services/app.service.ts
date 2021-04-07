@@ -6,7 +6,7 @@ import { map, tap, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AppService {
-  private BASE_URL = 'https://hanxia.sharepoint.com';
+  private BASE_URL = 'https://contoso.sharepoint.com';
   constructor(private httpClient: HttpClient) {
   }
   setAPIUrl(url: string) {
