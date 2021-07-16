@@ -2,7 +2,8 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+modern upload SPFX for SharePoint 2019.When the file uploaded to the library,the page will redirect to the editform.
+Please use it with caution when the library is a modern experience, because the modern library does not have an editform page.
 
 [picture of the solution in action, if possible]
 
