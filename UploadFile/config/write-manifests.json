@@ -1,0 +1,4 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/write-manifests.schema.json",
+  "cdnBasePath": "http://hrdms.app.swirecocacola.com/sites/hrtest/SPFX%20CDN%20Lib/UploadFileWebPart"
+}

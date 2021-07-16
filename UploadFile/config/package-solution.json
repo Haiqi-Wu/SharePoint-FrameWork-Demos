@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "upload-file-client-side-solution",
+    "id": "5579dd81-553f-4eb1-9ff7-7fae0efc92b2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/upload-file.sppkg"
+  }
+}
